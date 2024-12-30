@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giới Thiệu Bản Thân</title>
+    <!-- Thêm Font Awesome để sử dụng icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      /* Reset default styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        color: #333;
+        line-height: 1.6;
+        padding: 20px;
+      }
+
+      /* Video background container */
+      .video-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        z-index: -1;
+      }
+
+      .background-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 30px;
+        z-index: 1;
+      }
+
+      header h1 {
+        font-size: 3rem;
+        color: white;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      }
+
+      header p {
+        font-size: 1.2rem;
+        color: white;
+      }
+
+      header .avatar {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid white;
+        margin-bottom: 20px;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        z-index: 1;
+      }
+
+      .card {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        flex: 1 1 calc(33.333% - 40px);
+        max-width: calc(33.333% - 40px);
+        min-width: 280px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Thêm hiệu ứng zoom và bóng */
+      }
+
+      .card:hover {
+        transform: scale(1.1); /* Phóng to card khi di chuột vào */
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Tăng bóng khi hover */
+      }
+
+      .card h2 {
+        font-size: 1.5rem;
+        color: #4facfe;
+        margin-bottom: 10px;
+      }
+
+      .card p {
+        font-size: 1rem;
+        color: #666;
+      }
+
+      .social-links {
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .social-links a {
+        margin: 0 15px;
+        font-size: 2rem; /* Tăng kích thước icon */
+        color: white;
+        text-decoration: none;
+      }
+
+      .social-links a:hover {
+        color: #4facfe;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 0.9rem;
+        color: white;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+      }
+
+      .back-link {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background: white;
+        color: #4facfe;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background 0.3s ease;
+      }
+
+      .back-link:hover {
+        background: #4facfe;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Video Background -->
+    <div class="video-container">
+      <video class="background-video" autoplay muted loop>
+        <source
+          src="./video/iLoveYt.net_YouTube_Video-test-man-hinh-4k-va-2k-sac-net_Media_SlwFUNIIF5g_001_1080p.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <header>
+      <!-- Avatar tròn -->
+      <img
+        src="./Anh_avt/z6174341916526_72d7c14312ea53ae191a97f854af0e57.jpg"
+        alt="Ảnh Đại Diện"
+        class="avatar"
+      />
+      <h1>Phần Giới Thiệu Bản Thân</h1>
+      <p>
+        Khám phá thêm về kỹ năng, kinh nghiệm, học vấn và sở thích của tôi nhé.
+      </p>
+    </header>
+
+    <div class="container">
+      <div class="card">
+        <h2>Giới Thiệu</h2>
+        <p>
+          Tôi tên là Nguyễn Lâm Vỹ, một người đam mê và luôn không ngừng học hỏi
+          trong lĩnh vực Công Nghệ Máy Tính.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Kỹ Năng</h2>
+        <p>
+          Chuyên môn của tôi bao gồm C, C++, C#. Về cơ sở dữ liệu thì SQL,
+          MySQL. Tôi có khả năng giải quyết các vấn đề phức tạp một cách sáng
+          tạo.
+        </p>
+      </div>
+      <div class="card">
+        <h2>Kinh nghiệm</h2>
+        <p>
+          Hiện tôi là sinh viên mới ra trường. Tôi đã có kinh nghiệm làm việc
+          làm việc bán thời gian như Phục vụ, pha chế. Còn việc chính thì chỉ có
+          các dự án nhóm về Web bán hàng, Game 2d và các dự án nhỏ như bảng tính
+          toán trên các diễn đàn mà không có giải.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Học Vấn</h2>
+        <p>
+          Tôi hiện tại đang học Trường Đại Học Nam Cần Thơ chuyên ngành Công
+          Nghê Thông Tin, nơi tôi đã xây dựng nền tảng kiến thức vững chắc từ
+          năm 2022 - 2024.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Sở Thích</h2>
+        <p>
+          Trong thời gian rảnh, tôi thích nhậu với người yêu, nghe nhạc, và khám
+          phá những điều mới lạ trong cuộc sống.
+        </p>
+      </div>
+    </div>
+
+    <!-- Liên kết mạng xã hội với icon nằm dưới các card -->
+    <div class="social-links">
+      <a href="https://www.facebook.com/yeungocdieu" target="_blank">
+        <i class="fab fa-facebook-square"></i> Facebook
+      </a>
+      <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
+        <i class="fas fa-envelope"></i> Email
+      </a>
+      </a>
+      <a href="https://github.com/Nguyenlamvy" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+    </div>
+
+    <footer>
+      <a href="index.html" class="back-link">Quay về Trang Chủ</a>
+    </footer>
+  </body>
+</html>

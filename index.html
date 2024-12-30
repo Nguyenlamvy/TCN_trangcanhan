@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Personal Page</title>
+    <style>
+      /* Reset default styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body,
+      html {
+        height: 100%;
+        font-family: "Arial", sans-serif;
+      }
+
+      /* Video background container */
+      .video-container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .background-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+
+      /* Overlay content */
+      .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      }
+
+      .content h1 {
+        font-size: 3.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .content p {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .content a {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        color: white;
+        text-decoration: none;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        transition: background 0.3s ease;
+      }
+
+      .content a:hover {
+        background: rgba(255, 255, 255, 0.3);
+      }
+
+      /* Footer */
+      footer {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-size: 0.9rem;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="video-container">
+      <!-- Background Video -->
+      <video class="background-video" autoplay muted loop>
+        <source
+          src="./video/iLoveYt.net_YouTube_This-is-4K-Anime-vietnam-anime-ae-video_Media_T7ic8cnwc1w_001_1080p.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Content on top of the video -->
+      <div class="content">
+        <h1>Xin chào, Tôi là</h1>
+        <h1>NGUYỄN LÂM VỸ</h1>
+        <p>Chào mừng bạn đến với trang cá nhân của tôi.</p>
+        <a href="about.html">Click. Để xem thông tin</a>
+      </div>
+      <!-- Footer -->
+      <footer></footer>
+    </div>
+  </body>
+</html>
